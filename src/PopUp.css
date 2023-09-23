@@ -11,34 +11,48 @@
     width: 300px;
     height: 250px;
     flex-basis:100%;
-    background-color: grey;
+    background-color: rgb(255, 237, 237);
     border-radius: 10px;
 }
 
 .success{
     margin-top: -22px;
     margin-bottom: 20px;
-    background-color: green;
+    background-color: rgb(71, 248, 71);
     border-radius: 10px 10px 0 0;
-    height: 75px;
+    height: 60px;
     padding-top: 1.5px;
-    font-size: 20px;
 }
 
 .fail{
     margin-top: -22px;
     margin-bottom: 20px;
-    background-color: red;
+    background-color: rgb(240, 82, 82);
     border-radius: 10px 10px 0 0;
-    height: 75px;
+    height: 60px;
     padding-top: 1.5px;
 }
 
 .body{
     margin-top: 50px;
     font-size: 30px;
+    font-family: 'Signika SemiBold';
 }
 
 .footer{
     margin-top: 35px;
+}
+
+.footer Button{
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(172, 52, 241);
+    color: antiquewhite;
+    transition: background-color 0.5s ease;
+}
+
+.footer Button:hover{
+    background-color: rgb(119, 5, 185);
 }

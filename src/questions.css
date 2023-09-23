@@ -1,0 +1,13 @@
+.tbl,td,tr{
+    /* margin-top: 100px; */
+    border: 1px solid black;
+    align-self: center;
+    align-items: center;
+}
+
+.total{
+    
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}

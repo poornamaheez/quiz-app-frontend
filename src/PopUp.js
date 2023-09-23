@@ -1,13 +1,18 @@
 import React from "react";
 import "./PopUp.css";
 function PopUp({showMsg ,message,msgType}){
-    let head= "Error";
-    let btnText= "Retry";
-    let title = "fail";
+    let head;
+    let btnText;
+    let title;
     if (msgType==="true") {
         head="Success";
         btnText = "continue";
         title = "success";
+    }
+    else{
+        head="Error";
+        btnText = "Retry";
+        title = "fail";
     }
     return(
         <div className="total-background">
