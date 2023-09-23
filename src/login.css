@@ -1,0 +1,116 @@
+/* Style for the LoginUser component */
+.login{
+    background-image: url('https://wallpaperaccess.com/full/84248.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  
+  
+  .input-form {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    font-size: 16px;
+    text-align: center;
+    /* margin: 0 auto; */
+    width: 200px;
+  }
+  
+  .login-button {
+    align-self: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 75px;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .to-register {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Style the Link for navigation */
+  .register-link {
+    color: #ff8400;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-link:hover {
+    text-decoration: underline;
+  }
+  .container{
+    text-align: center;
+  }
+  
+  .TotalContent{
+    text-align: center;
+    margin: 120px auto;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  #InnerHint{
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  /* Add these styles to your CSS file */
+.success-message {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #f44336; /* Red background */
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.popup-msg{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

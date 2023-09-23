@@ -1,0 +1,103 @@
+/* App.css */
+
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the entire home page */
+  .home {
+    background-image: url('https://wallpaperaccess.com/full/84248.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 20px; */
+  }
+  
+  /* Header styles */
+  header {
+    /* background-color: ; */
+    color: #03ffa7;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Main content styles */
+  main {
+    max-width: 600px;
+  }
+  
+  .start-quiz{
+    background-color: rgba(0, 0, 0, 0.04);
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .start-quiz h2{
+    color: #f26a6ad2;
+  }
+  
+  .start-quiz p{
+    margin-bottom: 24px;
+  }
+  
+  .Linkbutton {
+    text-decoration: none; /*Remove the default underline */
+    background-color: #007bff; /* Change the background color */
+    color: #fff; /* Change the text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a smooth transition on hover */
+  }
+  
+  .Linkbutton:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+  }
+  
+  /* Adjust the position and size of the header */
+  
+  header h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  /* Footer styles */
+  footer {
+    color: #777;
+    font-size: 12px;
+    bottom: 0%;
+}
+  
+
+  .about {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    height: 110px;
+    width: 1000px;
+    margin-top: 30px;
+    border-radius: 250px;
+    padding: 2px; /* Reduce padding to make it smaller */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .about h2 {
+    color: #e7fe83c4;
+    font-size: 24px; /* You can adjust the font size if needed */
+  }
+  .about p{
+    color: #f0f0f0;
+  }
