@@ -1,5 +1,7 @@
 import React from "react";
 import "./PopUp.css";
+
+
 function PopUp({showMsg ,message,msgType}){
     let head;
     let btnText;
@@ -14,6 +16,12 @@ function PopUp({showMsg ,message,msgType}){
         btnText = "Retry";
         title = "fail";
     }
+
+    const handleContinue = () => {
+        showMsg(false);
+        window.location.href='/start'
+    };
+    
     return(
         <div className="total-background">
             <div className="message-box">
@@ -28,9 +36,7 @@ function PopUp({showMsg ,message,msgType}){
                     </p>
                 </div>
                 <div className="footer">
-                    <button onClick={()=>{
-                        showMsg(false);
-                        }}>
+                    <button onClick={handleContinue}>
                         {btnText}
                     </button>
                 </div>

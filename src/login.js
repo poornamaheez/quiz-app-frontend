@@ -22,11 +22,15 @@ function LoginUser() {
       console.log(response.data);
       setGivenMessage(response.data);
       setTypeOfMsg("true");
+      localStorage.setItem('username',loginData.username);
+      localStorage.setItem('isLoggedin','true');
+      console.log(loginData.username);
       // You can redirect to the user's dashboard or show a success message
     } catch (error) {
       console.error(error);
       setGivenMessage(error.response.data);
       setTypeOfMsg("false");
+      localStorage.setItem('isLoggedin','false');
       // Handle error: display an error message or take appropriate action
     }
   };
