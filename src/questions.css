@@ -1,17 +1,104 @@
-.tbl,.rw,.cl{
-    margin-top: 50px;
-    margin-left: 50px;
+.rw,.col,.cl{
     border: 1px solid black;
     align-self: center;
     align-items: center;
+    border-radius: 9px;
+    font-size: 21px;
+    padding: 10px;
+    width: 500px;
 }
 
+.col{
+    font-weight: bolder;
+}
+
+
 .total{
-    /* padding: 100%;
-    position: fixed;
-    display: flex; */
-    background-color: aqua;
-    justify-content: center;
+    background-image: url('https://wallpaperaccess.com/full/84248.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
     align-items: center;
-    align-self: center;
+    justify-content: center;
+}
+
+.responseButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.responseButton button{
+    margin: 0 10px;
+}
+
+.submitButton,.nextButton,.prevButton{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submitButton:hover,.nextButton:hover,.prevButton:hover{
+    background-color: #0056b3;
+}
+
+
+.top-left-message{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    color: white;
+}
+
+.logout-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 19px;
+}
+
+.logout-button button{
+    background-color: #ff3300;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.logout-button button:hover{
+    background-color: #ff6a00;
+}
+
+.selected-option {
+    /* border-color: #bf3106; Set your preferred highlight color */
+    border: solid 2px rgb(241, 141, 102);
+    font-weight: bold; /* Optionally make the text bold */
+    /* Add any other styling you want for the selected option here */
+  }
+
+.optionButton{
+    cursor: pointer;
+}
+
+.radButton{
+    display: none;
+}
+
+.box{
+    border: solid 1px white;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
 }

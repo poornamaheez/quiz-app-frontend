@@ -1,0 +1,91 @@
+.uploadContainer{
+    background-image: url('https://wallpaperaccess.com/full/84248.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadFile{
+    border: 3px dashed white;
+    border-radius: 20px;
+    min-width: 23vw;
+    min-height: 35vh;
+}
+
+.uploadFile:hover{
+    border: 3px dashed orange;
+}
+
+
+.body{
+    margin: 0px 20px 20px 20px;
+}
+
+
+.head{
+    /* padding: 0px; */
+    text-align: center;
+}
+
+.top-message{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    color: white;
+}
+
+.logout{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 19px;
+}
+
+.logout button{
+    background-color: #ff3300;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.logout button:hover{
+    background-color: #ff6a00;
+}
+
+.upload{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-left: 100px;
+    transition: background-color 0.3s;
+}
+
+.upload:hover{
+    background-color: #0056b3;
+}
+
+input[type="file"]{
+    /* display: none; */
+    cursor: pointer;
+}
+
+.upload-msg{
+    cursor: pointer;
+    margin-left: 85px;
+    margin-right: 85px;
+}

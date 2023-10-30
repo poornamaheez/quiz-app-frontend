@@ -7,8 +7,8 @@ import PopUp from "./PopUp";
 function LoginUser() {
   const [loginData, setLoginData] = useState({ username: '', password: '' });
   const [useModal,setUseModal] = useState(false);
-  const [givenMessage,setGivenMessage] = useState('Something went wrong');
-  const [typeOfMsg, setTypeOfMsg] = useState("false");
+  const [givenMessage,setGivenMessage] = useState("");
+  const [typeOfMsg, setTypeOfMsg] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -44,7 +44,7 @@ function LoginUser() {
           <input
             type="text"
             className='input-form'
-            id='InnerHint'
+            id='InnerHint1'
             placeholder='user-name'
             name='username'
             value={loginData.username}
@@ -55,7 +55,7 @@ function LoginUser() {
           <input
             type="password"
             className='input-form'
-            id='InnerHint'
+            id='InnerHint2'
             placeholder='password'
             name='password'
             value={loginData.password}
