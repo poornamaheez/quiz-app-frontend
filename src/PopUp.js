@@ -20,10 +20,12 @@ function PopUp({showMsg ,message,msgType}){
     else{
         return(
             <div className="total-backgroud">
-                <div className="body">
-                    <p>
-                        Loading
-                    </p>
+                <div className="message-box">
+                    <div className="body">
+                        <p>
+                            Loading
+                        </p>
+                    </div>
                 </div>
             </div>
         );
@@ -36,7 +38,7 @@ function PopUp({showMsg ,message,msgType}){
             localStorage.setItem("privilege","admin");
             window.location.href='/admin';
           }
-        else{
+        else if(message==="Login succesful"){
         window.location.href='/start';
         }
     };

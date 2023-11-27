@@ -46,12 +46,14 @@ export default function Result() {
     localStorage.clear();
     window.location.href = '/';
   };
+  console.log(localStorage.getItem("questionCount"));
 
   return (
     <div className='bg'>
       <div className='total-msg'>
         <h1 className='greet'>Hey, {name}</h1>
-        <table className='evalTable'>
+        {scored != localStorage.getItem("questionCount")?
+          <table className='evalTable'>
           <thead>
             <tr>
               <th>Question Number</th>
@@ -71,7 +73,7 @@ export default function Result() {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table>:<h3 className='greet'>Quiz Completed</h3>}
         {scored !== null ? (
           <p className='output'>Your score is {scored}</p>
         ) : (

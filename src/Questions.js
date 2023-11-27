@@ -12,9 +12,9 @@ function Questions() {
   if(localStorage.getItem('isLoggedin')!=='true'){
     window.location.href='/login';
   }
-  const uname = localStorage.getItem('username');
+  const unameOld = localStorage.getItem('username');
   // localStorage.setItem('isSubmitClicked','no');
-
+  const uname = unameOld[0].toUpperCase()+unameOld.slice(1);
 
   useEffect(() => {
     // Make a GET request to your API endpoint
@@ -45,6 +45,14 @@ function Questions() {
     const handleOptionChange = (event) => {
       setSelectedOption(event.target.value);
     };
+
+    const handleRadioClick = (event, option) => {
+      const radio = event.currentTarget.querySelector('.radButton');
+      if (radio) {
+        radio.click();
+      }
+    };
+    
 
   const submitQn = () => {
     // Send the selected option to the server using Axios when the "Next" button is clicked
@@ -97,6 +105,8 @@ function Questions() {
     return <div>Error: {error}</div>;
   }
 
+  localStorage.setItem("questionCount",questionCount);
+
   return (
     <div className='total'>
       <div className="top-left-message">
@@ -114,21 +124,28 @@ function Questions() {
             <td className='col'>{questionData.Question_number}. {questionData.Question}</td>
           </tr>
           <tr className='rw'>
-            <td className={`cl ${selectedOption === 'A' ? 'selected-option' : ''}`}>
-            <label className='optionButton'>
-          <input
-            type="radio"
-            name="option"
-            value="A"
-            checked={selectedOption === 'A'}
-            onChange={handleOptionChange}
-            className='radButton'
-          />A. {questionData.op_a}
-        </label>
-            </td>
-          </tr>
+              <td
+                className={`cl ${selectedOption === 'A' ? 'selected-option' : ''}`}
+                onClick={(event) => handleRadioClick(event, 'A')}
+              >
+                <label className='optionButton'>
+                  <input
+                    type="radio"
+                    name="option"
+                    value="A"
+                    checked={selectedOption === 'A'}
+                    onChange={handleOptionChange}
+                    className='radButton'
+                  />
+                  A. {questionData.op_a}
+                </label>
+              </td>
+            </tr>
+
           <tr className='rw'>
-            <td className={`cl ${selectedOption === 'B' ? 'selected-option' : ''}`}>
+            <td className={`cl ${selectedOption === 'B' ? 'selected-option' : ''}`} 
+            onClick={(event) => handleRadioClick(event, 'B')}
+            >
             <label className='optionButton'>
           <input
             type="radio"
@@ -142,7 +159,9 @@ function Questions() {
             </td>
           </tr>
           <tr className='rw'>
-            <td className={`cl ${selectedOption === 'C' ? 'selected-option' : ''}`}>
+            <td className={`cl ${selectedOption === 'C' ? 'selected-option' : ''}`}
+            onClick={(event) => handleRadioClick(event, 'C')}
+            >
             <label className='optionButton'>
           <input
             type="radio"
@@ -156,7 +175,9 @@ function Questions() {
             </td>
           </tr>
           <tr className='rw'>
-            <td className={`cl ${selectedOption === 'D' ? 'selected-option' : ''}`}>
+            <td className={`cl ${selectedOption === 'D' ? 'selected-option' : ''}`}
+            onClick={(event) => handleRadioClick(event, 'D')}
+            >
             <label className='optionButton'>
           <input
             type="radio"
